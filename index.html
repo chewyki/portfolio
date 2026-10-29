@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио Юмжитова Солбона — студента-программиста из Улан-Удэ">
+    <title>Юмжитов Солбон — портфолио программиста</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Ссылка для тех, кто пользуется клавиатурой и скринридером -->
+    <a class="skip-link" href="#content" data-i18n="skip">Перейти к содержимому</a>
+
+    <!-- ШАПКА И МЕНЮ -->
+    <header>
+        <div class="header-buttons">
+            <button id="lang-toggle" type="button" aria-label="Switch to English" title="Change language">EN</button>
+            <button id="theme-toggle" type="button" aria-label="Включить тёмную тему" aria-pressed="false" title="Сменить тему">🌙</button>
+        </div>
+
+        <nav aria-label="Основное меню">
+            <a href="#about" data-i18n="navAbout">Обо мне</a>
+            <a href="#skills" data-i18n="navSkills">Навыки</a>
+            <a href="#education" data-i18n="navEducation">Образование</a>
+            <a href="#projects" data-i18n="navProjects">Проекты</a>
+            <a href="#github">GitHub</a>
+            <a href="#contacts" data-i18n="navContacts">Контакты</a>
+        </nav>
+
+        <div class="header-content">
+            <div class="header-text">
+                <p class="hello" data-i18n="hello">Привет! Это моё портфолио 👋</p>
+                <h1 data-i18n="name">Юмжитов Солбон</h1>
+                <p class="subtitle" data-i18n="subtitle">Студент-программист</p>
+                <p data-i18n="heroText">Изучаю веб-разработку и создаю свои первые проекты.</p>
+                <div class="header-links">
+                    <a class="main-link" href="#projects" data-i18n="heroProjects">Мои проекты</a>
+                    <a class="second-link" href="https://github.com/chewyki" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+            </div>
+            <img class="avatar" src="img/avatar.jpg" alt="Рисованный аватар Солбона" width="180" height="180">
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- ОБО МНЕ -->
+        <section id="about">
+            <h2 data-i18n="aboutTitle">Обо мне</h2>
+            <p data-i18n="aboutText">Привет! Меня зовут Солбон. Я учусь на программиста в колледже БГУ в Улан-Удэ и интересуюсь созданием сайтов и приложений. Сейчас изучаю HTML, CSS и JavaScript, стараюсь делать страницы понятными и удобными для пользователя.</p>
+            <p data-i18n="aboutText2">Этот сайт — моё учебное портфолио. Здесь можно посмотреть навыки, примеры работ и способы связи.</p>
+        </section>
+
+        <!-- НАВЫКИ -->
+        <section id="skills">
+            <h2 data-i18n="skillsTitle">Мои навыки</h2>
+            <ul class="skill-list">
+                <li><span class="skill-icon" aria-hidden="true">🐍</span><strong>Python</strong><span data-i18n="skillPython">Базовые программы и работа с данными</span></li>
+                <li><span class="skill-icon" aria-hidden="true">💻</span><strong data-i18n="skillCppTitle">C# и C++</strong><span data-i18n="skillCpp">Основы программирования</span></li>
+                <li><span class="skill-icon" aria-hidden="true">🗃️</span><strong data-i18n="skillSqlTitle">SQL и PHP</strong><span data-i18n="skillSql">Базовые запросы и работа с веб-приложениями</span></li>
+                <li><span class="skill-icon" aria-hidden="true">🌐</span><strong>HTML, CSS, JavaScript</strong><span data-i18n="skillWeb">Изучаю разработку пользовательских интерфейсов</span></li>
+            </ul>
+            <p class="note" data-i18n="skillsNote">Уровень владения языками программирования — от базового до среднего. Продолжаю учиться и практиковаться.</p>
+        </section>
+
+        <!-- ОБРАЗОВАНИЕ -->
+        <section id="education">
+            <h2 data-i18n="educationTitle">Образование</h2>
+            <div class="simple-card">
+                <h3 data-i18n="collegeTitle">Колледж БГУ</h3>
+                <p data-i18n="collegeText">Улан-Удэ. Обучаюсь по специальности, связанной с программированием.</p>
+            </div>
+            <h3 class="section-subtitle" data-i18n="timelineTitle">Мой путь в программировании</h3>
+            <ol class="timeline">
+                <li><strong data-i18n="step1Title">Учёба в колледже</strong><span data-i18n="step1Text">Получаю знания по программированию в колледже БГУ.</span></li>
+                <li><strong data-i18n="step2Title">Языки программирования</strong><span data-i18n="step2Text">Знакомлюсь с Python, C#, C++, SQL и PHP.</span></li>
+                <li><strong data-i18n="step3Title">Изучение веб-разработки</strong><span data-i18n="step3Text">Осваиваю HTML, CSS и JavaScript на занятиях.</span></li>
+                <li><strong data-i18n="step4Title">Первое портфолио</strong><span data-i18n="step4Text">Применяю изученные темы на этом сайте.</span></li>
+            </ol>
+        </section>
+
+        <!-- ПРОЕКТЫ -->
+        <section id="projects">
+            <h2 data-i18n="projectsTitle">Учебные проекты</h2>
+            <p data-i18n="projectsIntro">Здесь собраны примеры того, что я изучаю. Карточки можно искать, фильтровать и открывать подробнее.</p>
+
+            <!-- Поиск и фильтры — дополнительное задание из лекций -->
+            <div class="project-tools">
+                <label for="project-search" data-i18n="searchLabel">Поиск проекта</label>
+                <input id="project-search" type="search" placeholder="Например, GitHub или HTML" data-placeholder="searchPlaceholder">
+
+                <div class="filter-buttons" role="group" aria-label="Фильтр проектов">
+                    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true" data-i18n="filterAll">Все</button>
+                    <button class="filter-btn" type="button" data-filter="html" aria-pressed="false">HTML/CSS</button>
+                    <button class="filter-btn" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+                </div>
+                <p id="projects-count" role="status" aria-live="polite">Показаны 3 проекта</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-tech="html css javascript">
+                    <span class="project-icon" aria-hidden="true">🧑‍💻</span>
+                    <h3 data-i18n="project1Title">Личное портфолио</h3>
+                    <p data-i18n="project1Text">Этот сайт-резюме с адаптивной вёрсткой, ночным режимом и формой обратной связи.</p>
+                    <span class="tag">HTML · CSS · JavaScript</span>
+                    <button class="details-btn" type="button" data-project="portfolio" data-i18n="details">Подробнее</button>
+                </article>
+
+                <article class="project-card" data-tech="html css">
+                    <span class="project-icon" aria-hidden="true">🎨</span>
+                    <h3 data-i18n="project2Title">Практика HTML и CSS</h3>
+                    <p data-i18n="project2Text">Учебные страницы с заголовками, изображениями, ссылками и карточками.</p>
+                    <span class="tag">HTML · CSS</span>
+                    <button class="details-btn" type="button" data-project="html" data-i18n="details">Подробнее</button>
+                </article>
+
+                <article class="project-card" data-tech="javascript">
+                    <span class="project-icon" aria-hidden="true">🔗</span>
+                    <h3 data-i18n="project3Title">Работа с GitHub API</h3>
+                    <p data-i18n="project3Text">Получение информации о профиле GitHub через запрос fetch(). Попробовать можно ниже.</p>
+                    <span class="tag">JavaScript · API · JSON</span>
+                    <button class="details-btn" type="button" data-project="github" data-i18n="details">Подробнее</button>
+                </article>
+            </div>
+            <p id="no-projects" hidden data-i18n="noProjects">По вашему запросу ничего не найдено.</p>
+        </section>
+
+        <!-- СЛАЙДЕР БЕЗ БИБЛИОТЕК — ИЗ ДОПОЛНИТЕЛЬНОГО ЗАДАНИЯ -->
+        <section id="showcase">
+            <h2 data-i18n="sliderTitle">Примеры интерфейсов</h2>
+            <p data-i18n="sliderIntro">Небольшие иллюстрации элементов моего учебного сайта. Переключение сделано на JavaScript, без библиотек.</p>
+            <div class="slider">
+                <div class="slides" aria-live="polite">
+                    <div class="slide active" data-slide="0">
+                        <div class="slide-preview preview-one" aria-hidden="true">
+                            <div class="fake-browser"><span></span><span></span><span></span><small>index.html</small></div>
+                            <div class="preview-hero"><div class="preview-text-lines"><b></b><i></i><i></i><em></em></div><div class="preview-avatar">С</div></div>
+                        </div>
+                        <h3 data-i18n="slide1Title">Главная страница</h3>
+                        <p data-i18n="slide1Text">HTML-разметка и адаптивное оформление с помощью CSS.</p>
+                    </div>
+                    <div class="slide" data-slide="1" hidden>
+                        <div class="slide-preview preview-two" aria-hidden="true">
+                            <div class="fake-browser"><span></span><span></span><span></span><small>style.css</small></div>
+                            <div class="preview-skills"><div>Python</div><div>C++</div><div>SQL</div><div>HTML</div></div>
+                        </div>
+                        <h3 data-i18n="slide2Title">Карточки навыков</h3>
+                        <p data-i18n="slide2Text">CSS Grid, Flexbox, цвета и отступы.</p>
+                    </div>
+                    <div class="slide" data-slide="2" hidden>
+                        <div class="slide-preview preview-three" aria-hidden="true">
+                            <div class="fake-browser"><span></span><span></span><span></span><small>script.js</small></div>
+                            <div class="preview-code"><span>async function loadUser() {</span><span>  const response = await fetch(url);</span><span>  const data = await response.json();</span><span>  return data;</span><span>}</span></div>
+                        </div>
+                        <h3 data-i18n="slide3Title">Получение данных</h3>
+                        <p data-i18n="slide3Text">Пример работы с fetch(), API и JSON из лекций.</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button id="slide-prev" class="slider-arrow" type="button" aria-label="Предыдущий слайд">←</button>
+                    <div class="slider-dots" role="group" aria-label="Выбор слайда">
+                        <button class="slider-dot active" data-slide-to="0" type="button" aria-label="Слайд 1" aria-current="true"></button>
+                        <button class="slider-dot" data-slide-to="1" type="button" aria-label="Слайд 2"></button>
+                        <button class="slider-dot" data-slide-to="2" type="button" aria-label="Слайд 3"></button>
+                    </div>
+                    <button id="slide-next" class="slider-arrow" type="button" aria-label="Следующий слайд">→</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПРИМЕР ИЗ ЛЕКЦИИ: ЗАГРУЗКА ДАННЫХ С СЕРВЕРА -->
+        <section id="github">
+            <h2 data-i18n="apiTitle">Небольшая практика с API</h2>
+            <p data-i18n="apiText">Два примера из занятий: получение профиля GitHub и случайного факта с сервера.</p>
+            <div class="widgets-grid">
+                <div>
+                    <h3 data-i18n="githubTitle">💻 Мой GitHub</h3>
+                    <p data-i18n="githubText">Мой логин — chewyki. Данные загружаются без перезагрузки страницы.</p>
+                    <form id="github-form" class="github-form">
+                        <label for="github-login" data-i18n="githubLabel">Логин GitHub</label>
+                        <div class="input-row">
+                            <input id="github-login" name="github-login" type="text" value="chewyki" required>
+                            <button id="github-btn" type="submit" data-i18n="githubButton">Найти профиль</button>
+                        </div>
+                    </form>
+                    <div id="github-box" class="simple-card" role="status" aria-live="polite">
+                        <span data-i18n="githubWaiting">Здесь появится информация о профиле.</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 data-i18n="factTitle">🐱 Случайный факт</h3>
+                    <div class="simple-card fact-card">
+                        <p data-i18n="factIntro">Пример запроса к catfact.ninja из лекции. Если API недоступен, появится один из местных фактов.</p>
+                        <p id="fact-text" role="status" aria-live="polite" data-i18n="factWaiting">Нажмите кнопку для загрузки факта.</p>
+                        <button id="fact-btn" type="button" data-i18n="factButton">Новый факт</button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="section-subtitle" data-i18n="reposTitle">Мои открытые репозитории</h3>
+            <p data-i18n="reposText">Список загружается с GitHub через API. Если сеть недоступна, можно перейти в профиль по ссылке.</p>
+            <div id="repo-list" class="repo-list" role="status" aria-live="polite">Загрузка репозиториев...</div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section id="contacts">
+            <h2 data-i18n="contactTitle">Связаться со мной</h2>
+            <p data-i18n="contactIntro">Можешь написать мне в мессенджер, соцсети или на почту.</p>
+            <div class="contact-links">
+                <a class="contact-link" href="https://t.me/kitazu" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">✈️</span><span>Telegram<small>@kitazu</small></span><span aria-hidden="true">↗</span></a>
+                <a class="contact-link" href="https://www.tiktok.com/@kit_kat_had" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🎵</span><span>TikTok<small>@kit_kat_had</small></span><span aria-hidden="true">↗</span></a>
+                <a class="contact-link" href="mailto:zxcgoul67@mail.ru"><span aria-hidden="true">✉️</span><span>E-mail<small>zxcgoul67@mail.ru</small></span><span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="copy-row"><button id="copy-email" type="button" data-i18n="copyEmail">Скопировать почту</button><span id="copy-status" role="status" aria-live="polite"></span></div>
+            <h3 class="section-subtitle" data-i18n="formTitle">Форма обратной связи</h3>
+            <p data-i18n="formIntro">Через форму ниже можно подготовить письмо в почтовой программе.</p>
+            <form id="contact-form">
+                <label for="name" data-i18n="nameLabel">Ваше имя</label>
+                <input type="text" id="name" name="name" placeholder="Как вас зовут?" data-placeholder="namePlaceholder" required>
+
+                <label for="email" data-i18n="emailLabel">Ваш E-mail</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+                <label for="msg" data-i18n="messageLabel">Сообщение</label>
+                <textarea id="msg" name="message" rows="5" placeholder="Напишите сообщение..." data-placeholder="messagePlaceholder" required></textarea>
+
+                <button id="send-btn" type="submit" data-i18n="sendButton">Написать письмо</button>
+            </form>
+            <p id="form-status" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <!-- МОДАЛЬНОЕ ОКНО С ПОДРОБНОСТЯМИ ПРОЕКТА -->
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+        <button id="close-dialog" type="button" aria-label="Закрыть окно">×</button>
+        <h2 id="dialog-title">Название проекта</h2>
+        <p id="dialog-description"></p>
+        <p id="dialog-technologies"></p>
+    </dialog>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <p>© <span id="year">2026</span> <span data-i18n="footer">Юмжитов Солбон. Учебный проект на HTML, CSS и JavaScript.</span></p>
+    </footer>
+
+    <button id="to-top" type="button" aria-label="Вернуться наверх" title="Наверх">↑</button>
+</body>
+</html>

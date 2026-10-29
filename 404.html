@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Страница не найдена</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .not-found { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+        .not-found-content { width: min(100%, 560px); text-align: center; background: var(--color-card); border: 1px solid var(--color-border); border-radius: 18px; padding: 48px 24px; box-shadow: var(--shadow); }
+        .not-found h1 { font-size: clamp(75px, 15vw, 140px); line-height: 1; color: var(--color-main); margin: 0; }
+        .not-found p { margin: 16px 0 26px; }
+    </style>
+</head>
+<body>
+    <main class="not-found" id="content">
+        <div class="not-found-content">
+            <h1>404</h1>
+            <h2>Страница не найдена</h2>
+            <p>Похоже, ссылка неправильная или такой страницы больше нет.</p>
+            <a class="main-link" href="./index.html">На главную</a>
+        </div>
+    </main>
+</body>
+</html>
